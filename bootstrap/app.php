@@ -1,15 +1,24 @@
 <?php
 
-use Illuminate\Foundation\Application;
-use Illuminate\Foundation\Configuration\Exceptions;
-use Illuminate\Foundation\Configuration\Middleware;
+declare(strict_types=1);
 
-return Application::configure(basePath: dirname(__DIR__))
-    ->withRouting(
-        api: __DIR__.'/../routes/api.php',
-        commands: __DIR__.'/../routes/console.php',
-    )
-    ->withMiddleware(function (Middleware $middleware) {
-    })
-    ->withExceptions(function (Exceptions $exceptions) {
-    })->create();
+use Illuminate\Foundation\Application;
+
+$app = Application::configure(basePath: dirname(__DIR__))->create();
+
+$app->singleton(
+    Illuminate\Contracts\Http\Kernel::class,
+    App\Framework\Http\Kernel::class
+);
+
+$app->singleton(
+    Illuminate\Contracts\Console\Kernel::class,
+    App\Framework\Console\Kernel::class
+);
+
+$app->singleton(
+    Illuminate\Contracts\Debug\ExceptionHandler::class,
+    App\Framework\Exceptions\Handler::class
+);
+
+return $app;
