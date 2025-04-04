@@ -2,7 +2,13 @@
 
 <p align="center">
     <a href="http://anime-api.loc/api" target="_blank">
-        <img src="https://sun9-57.userapi.com/s/v1/if1/nfHqbOGnDG8to2aiIoDCXFOI7jYRXHZpv6NcjzIeUl95iSCMK81DeFb7xfhNMZhTHOlIKXr_.jpg?quality=96&as=32x31,48x47,72x71,108x106,160x157,240x236,360x354,480x472,540x531,640x630,720x708,917x902&from=bu&u=YbkB0DAnf0tuvoProb_ZskoCsOnQpy2c_1PBLTfUTbw&cs=917x902" width="300" alt="Laravel Logo">
+        <img src="https://i.pinimg.com/originals/80/21/09/802109fc4a231b28f544e435fb723fb2.jpg" width="300" height="300" alt="Laravel Logo">
+    </a>
+    <a href="http://anime-api.loc/api" target="_blank">
+        <img src="https://images.genius.com/6b54ad60392200a550644671cc2d0578.860x834x1.png" width="300" height="300" alt="Laravel Logo">
+    </a>
+    <a href="http://anime-api.loc/api" target="_blank">
+        <img src="https://i.pinimg.com/originals/50/02/41/500241f11696268f2999c2da5d2d3a43.png" height="300" width="300" alt="Laravel Logo">
     </a>
 </p>
 
